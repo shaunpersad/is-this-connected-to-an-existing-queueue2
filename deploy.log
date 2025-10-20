@@ -1,0 +1,34 @@
+2025-08-27T19:52:06.353Z	Initializing build environment...
+2025-08-27T19:52:19.710Z	Success: Finished initializing build environment
+2025-08-27T19:52:19.936Z	Cloning seed repository...
+2025-08-27T19:52:19.943Z	Cloning from: https://github.com/shchahrykovich/cloudflare-deploy-button-with-queues-demo.git
+2025-08-27T19:52:26.525Z	Overwriting files
+2025-08-27T19:52:27.087Z	Pushing to destination: https://github.com/shchahrykovich/cloudflare-deploy-button-with-queues-demo-1.git
+2025-08-27T19:52:29.508Z	Detected the following tools from environment: npm@10.9.2, nodejs@22.16.0
+2025-08-27T19:52:29.510Z	Installing project dependencies: npm clean-install --progress=false
+2025-08-27T19:52:35.020Z
+2025-08-27T19:52:35.021Z	added 54 packages, and audited 55 packages in 5s
+2025-08-27T19:52:35.021Z
+2025-08-27T19:52:35.021Z	10 packages are looking for funding
+2025-08-27T19:52:35.021Z	  run `npm fund` for details
+2025-08-27T19:52:35.022Z
+2025-08-27T19:52:35.022Z	found 0 vulnerabilities
+2025-08-27T19:52:35.114Z	Executing user deploy command: npm run deploy
+2025-08-27T19:52:35.419Z
+2025-08-27T19:52:35.419Z	> cloudflare-deploy-button-with-queues-demo-1@0.0.0 deploy
+2025-08-27T19:52:35.420Z	> wrangler deploy
+2025-08-27T19:52:35.420Z
+2025-08-27T19:52:36.588Z
+2025-08-27T19:52:36.589Z	 ⛅️ wrangler 4.33.0
+2025-08-27T19:52:36.589Z	───────────────────
+2025-08-27T19:52:36.598Z
+2025-08-27T19:52:36.680Z	✘ [ERROR] Processing wrangler.jsonc configuration:
+2025-08-27T19:52:36.680Z
+2025-08-27T19:52:36.680Z	    - "queues.consumers[0]" should have a string "queue" field but got {}.
+2025-08-27T19:52:36.681Z	    - "queues.producers[0]" bindings should have a string "queue" field but got {"binding":"MY_QUEUE"}.
+2025-08-27T19:52:36.681Z
+2025-08-27T19:52:36.681Z
+2025-08-27T19:52:36.682Z
+2025-08-27T19:52:36.682Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2025-08-27T19:52:36.702Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2025-08-27_19-52-35_944.log"
+2025-08-27T19:52:36.843Z	Failed: error occurred while running deploy command
